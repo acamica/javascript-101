@@ -92,3 +92,20 @@ contador++
 
 en cada iteración del for le suma uno al contador, para avanzar a la siguiente posición
 Así, tendremos exactamente el mismo resultado que con el `while.`
+
+## For en arreglos
+Algo muy muy común es recorrer los valores de un arreglo y para eso podemos utilizar al bucle for y la propiedad length. Lo que queremos lograr es que mientras queden elementos en el arreglo ir recorriendo (o iterando, palabra muy usada en la programación).
+
+```javascript
+var gustosHelado = ['Vainilla', 'Frutilla', 'Chocolate', 'Limón'];
+// mostramos los gustos de helado
+for(var i = 0; i < gustosHelado.length; i++){
+ console.log(gustosHelado[i]);
+}
+```
+
+Lo que estamos haciendo es recorrer todos los gustos y mostrándolos en pantalla. 
+Repasemos parte por parte el código:
+`var i = 0;`: crea la variable que va a representar al índice
+`i < gustosHelado.length;`: es la condición. Si el índice es equivalente al largo del arreglo, deberá detenerse (recordemos que empieza en 0, así que el chequeo debe ser por < y no por <=) 
+`i++;`: en cada iteración le suma uno al índice para seguir recorriendo el arreglo.
