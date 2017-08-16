@@ -32,3 +32,15 @@ while(siganLlegandoInvitados) {
   saludarInvitado();
 }
 ```
+
+Veamos un ejemplo con una cuenta regresiva que empieza con un contador en 100 y se va descontando de a 1 hasta llegar a 0 donde se corta el bucle. 
+
+```javascript
+var contador = 100;
+
+while (contador > 0) {
+  contador--; 
+}
+```
+
+Acordate que el ciclo **se va a seguir ejecutando hasta que deje de cumplirse la condición** (en este caso `contador > 0`)
