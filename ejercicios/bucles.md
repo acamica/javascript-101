@@ -13,7 +13,10 @@ saludar invitado 120
 
 Esto no parece ser una buena forma, tenemos que usar 120 líneas de código que dicen exactamente lo mismo.
 Acá es donde aparece la sentencia `while` ("mientras" en castellano), que tiene más o menos el siguiente significado:
-`mientras se cumpla una condición, hacer algo.` o
+`mientras se cumpla una condición, hacer algo.`
+
+o
+
 `while se cumpla una condición, hacer algo.`
 
 Algunos ejemplos podrían ser:
