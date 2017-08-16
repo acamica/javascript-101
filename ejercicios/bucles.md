@@ -2,17 +2,22 @@
  
 Cuando programamos es común que tengamos que repetir alguna tarea varias veces.
 Imagínense que queremos hacer un programa que salude a todos los invitados a una fiesta. Haríamos algo como:
-```javascript
+
+```
 saludar invitado 1
 saludar invitado 2
 saludar invitado 3
 saludar invitado 4
-…
+// repetir muchas veces más...
 saludar invitado 120
 ```
 
 Esto no parece ser una buena forma, tenemos que usar 120 líneas de código que dicen exactamente lo mismo.
+
+## While
+
 Acá es donde aparece la sentencia `while` ("mientras" en castellano), que tiene más o menos el siguiente significado:
+
 `mientras se cumpla una condición, hacer algo.`
 
 o
@@ -44,3 +49,46 @@ while (contador > 0) {
 ```
 
 Acordate que el ciclo **se va a seguir ejecutando hasta que deje de cumplirse la condición** (en este caso `contador > 0`)
+
+## For
+
+Así como el while nos permite repetir alguna tarea varias veces, 
+existe una forma de hacer esto con una sintaxis simplificada.
+
+Podemos poner el contador y la condición y el incremento (o decremento) del contaor en una sola línea:
+
+```javascript
+for(var contador = 0; contador < cantidadInvitados; contador++) {
+ saludarInvitado();
+}
+```
+
+
+que se podría traducir como: 
+"Dados un `contador`, una `condición` y un `incremento del contador`, hacé determinada `acción`"
+
+En nuestro ejemplo sería: 
+
+"Dado el `contador de invitados` (contador), si el contador es `menor a la cantidad de invitados`  (condición), `sumá 1 al contador` (incremento) y `saludá al invitado` (acción)."
+
+Parece algo críptico a primera vista, pero sólo estamos resumiendo las cosas:
+
+```javascript
+var contador = 0
+```
+
+estamos inicializando el contador que nos va indicar la posición en la que estamos
+
+```javascript
+contador < cantidadInvitados
+```
+
+es la condición para detener el for. Podemos usar cualquier otro tipo de condición. 
+No necesariamente debe ser por menor (<) o mayor (>). Puede ser igual (=), igual o menor (=<), etc.
+
+```javascript
+contador++
+```
+
+en cada iteración del for le suma uno al contador, para avanzar a la siguiente posición
+Así, tendremos exactamente el mismo resultado que con el `while.`
