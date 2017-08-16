@@ -106,6 +106,10 @@ for(var i = 0; i < gustosHelado.length; i++){
 
 Lo que estamos haciendo es recorrer todos los gustos y mostrándolos en pantalla. 
 Repasemos parte por parte el código:
+
 `var i = 0;`: crea la variable que va a representar al índice
+
 `i < gustosHelado.length;`: es la condición. Si el índice es equivalente al largo del arreglo, deberá detenerse (recordemos que empieza en 0, así que el chequeo debe ser por < y no por <=) 
+
 `i++;`: en cada iteración le suma uno al índice para seguir recorriendo el arreglo.
+
