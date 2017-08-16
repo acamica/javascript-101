@@ -89,3 +89,10 @@ Ahora sólo tenemos que pasar los años que queremos por parámetro a la funció
 ```javascript
 kmRecorridos(10)  
 kmRecorridos(6)
+```
+
+Ahora sólo tenemos que pasar los años que queremos por parámetro a la función y retornara el resultado!
+
+## Ejercicios
+Para programar una calculadora, necesitamos funciones para sumar, restar, dividir y multiplicar. 
+¿Cómo implementarias estas funciones para que pasados dos parámetros retornen el valor luego de aplicar la operación correspondiente?
