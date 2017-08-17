@@ -19,12 +19,32 @@
 
 ## Ejercicios
 
+Para realizar tus ejercicios podés tomar este esqueleto de HTML e ir agregando scripts por cada uno de ello
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    
+    <script type="text/javascript">
+      
+    </script>
+    
+  </body>
+</html>
+```
+
 1. [console.log](/ejercicios/01.md)
 1. [números, cadenas de texto y booleanos](/ejercicios/02.md)
 1. [variables](/ejercicios/03.md)
 1. [operadores](/ejercicios/04.md)
 1. [condicionales](/ejercicios/05.md)
-1. [bucles](/ejercicios/bucles.md)
-1. [funciones](/ejercicios/funciones.md)
 1. [parcialito 🙊](/ejercicios/06.md)
 1. [arrays](/ejercicios/07.md)
+1. [bucles](/ejercicios/bucles.md)
+1. [funciones](/ejercicios/funciones.md)
+
