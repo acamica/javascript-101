@@ -2,13 +2,13 @@ var sumar = function(num1, num2) {
     return num1 + num2;
 };
 var restar = function(num1, num2) {
-    return 100;
+    return num1 - num2;
 };
 var multiplicar = function(num1, num2) {
-    return 100;
+    return num1 * num2;
 };
 var dividir = function(num1, num2) {
-    return 100;
+    return num1 / num2;
 };
 
 console.log("25 + 3 es " + sumar(25, 3));
