@@ -23,14 +23,18 @@ Para realizar tus ejercicios podés tomar este esqueleto de HTML e ir agregando 
 
 ```html
 <!DOCTYPE html>
-<html>
-  <head>
-      <script src="" charset="utf-8"></script>
-  </head>
-  <body>
-    
-    
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript 101</title>
+</head>
+<body>
+    <h1>JavaScript 101</h1>
+    <p>La magia ocurre en las <em>developer tools</em></p>
+    <script src=""></script>
+</body>
 </html>
 ```
 
@@ -41,6 +45,5 @@ Para realizar tus ejercicios podés tomar este esqueleto de HTML e ir agregando 
 1. [condicionales](/ejercicios/05.md)
 1. [parcialito 🙊](/ejercicios/06.md)
 1. [arrays](/ejercicios/07.md)
-1. [bucles](/ejercicios/bucles.md)
-1. [funciones](/ejercicios/funciones.md)
-
+1. [bucles](/ejercicios/08.md)
+1. [funciones](/ejercicios/09.md)
