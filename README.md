@@ -25,14 +25,10 @@ Para realizar tus ejercicios podés tomar este esqueleto de HTML e ir agregando 
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
+      <script src="" charset="utf-8"></script>
   </head>
   <body>
     
-    <script type="text/javascript">
-      
-    </script>
     
   </body>
 </html>
