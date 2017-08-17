@@ -1,4 +1,4 @@
-# Workshop University
+# Workshop de JavaScript - Acamica University
 
 ## Introducción
 
@@ -19,7 +19,7 @@
 
 ## Ejercicios
 
-Para realizar tus ejercicios podés tomar este esqueleto de HTML e ir agregando scripts por cada uno de ello
+Para realizar tus ejercicios podés tomar este esqueleto de HTML e ir agregando scripts por cada uno de ellos.
 
 ```html
 <!DOCTYPE html>
