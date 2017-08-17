@@ -15,7 +15,7 @@
 1. ¿Por qué JavaScript?
     * Hoy en día, JavaScript tiene muchísimos casos de uso diferentes, desde manipular robots u otro tipos de hardware, hacer gráficos complejos, proyectos en realidad virtual y escribir aplicaciones para teléfonos y navegadores.
     * Node.js se presenta en 2009.
-1. Escribir y ejecutar nuestro primer programa en el navegador y en la consola.
+1. Escribir y ejecutar nuestro primer programa en el navegador.
 
 ## Ejercicios
 
