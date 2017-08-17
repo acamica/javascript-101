@@ -36,7 +36,8 @@ Es como que estamos **etiquetando con un nombre a este bloque de código y lo po
 * Ejecución:
 
     `saludar();`
-    
+   
+   
 Ahora sí, se mostrará en la consola el texto "¡Hola! Estamos aprendiendo sobre funciones en JavaScript".
 
 
@@ -74,7 +75,7 @@ Eso es porque cuando creamos nuestra función tenemos que decirle que puede reci
 Una función con parámetros podemos pensarla como una caja que le damos algo y nos devuelve otra cosa.
 Como esas máquinas de helado, le pasamos crema, leche y hielo y nos devuelve un helado. 
 Es decir, hizo algo con los parámetros (la crema, la leche y el hielo),
-Ahora podemos reutilizar el código pero sin embargo tenemos cambios! 
+
 
 ## Return
 Somos personas de hábitos, y qué mejor que generar hábitos saludables. 
@@ -83,28 +84,33 @@ y saber a lo largo del tiempo, dado un número de días cuantos kms tenemos acum
 
 Para eso, podemos hacer el cálculo manualmente. Si camino 5 km por día, en 365 días tendré caminados 1825 km! 
 
-Entonces en dos años tendré: 5*365*2 km recorridos.
-Podemos escribir en la consola del navegador 5*365*2, y si camino durante 5 años,5*365*5 para ver el resultado. 
+Entonces en dos años tendré: 5\*365\*2 km recorridos.
+Podemos escribir en la consola del navegador 5\*365\*2, y si camino durante 5 años,5\*365\*5 para ver el resultado. 
+
 Pero qué pasa si queremos que este cálculo sea automatizado? 
-Acá siempre estamos repitiendo 5*365, entonces seguramente existe una mejor forma. 
+Acá siempre estamos repitiendo 5\*365, entonces seguramente existe una mejor forma. 
 Por algo sabemos usar funciones, así que vamos a aprovecharlas.
+
+* Retornando kilómetros recorridos
+
+        ```javascript
+        var kmRecorridos = function(años){
+            var kmsTotales = 5*365*años; 
+            return kmsTotales;
+        }
+        ```
+
+Apareció la palabra clave `return` es un valor que va a devolver nuestra función. 
+
+Sólo tenemos que pasar los años que queremos por parámetro a la función y retornara el resultado!
+
 ```javascript
-var kmRecorridos = function(años){
-    var kmsTotales = 5*365*años; 
-    return kmsTotales;
-}
+kmRecorridos(10) // retorna 18250  
+kmRecorridos(6) // retorna 10950
 ```
-
-Esta palabra clave que apareció `return` es un valor que va a devolver nuestra función. 
-
-Ahora sólo tenemos que pasar los años que queremos por parámetro a la función y retornara el resultado!
-```javascript
-kmRecorridos(10)  
-kmRecorridos(6)
-```
-
-Ahora sólo tenemos que pasar los años que queremos por parámetro a la función y retornara el resultado!
 
 ## Ejercicios
-Para programar una calculadora, necesitamos funciones para sumar, restar, dividir y multiplicar. 
-¿Cómo implementarias estas funciones para que pasados dos parámetros retornen el valor luego de aplicar la operación correspondiente?
+Para programar una calculadora, necesitamos funciones para **sumar, restar, dividir y multiplicar.** 
+¿Cómo implementarias estas funciones para que pasados dos parámetros **retornen** el valor luego de aplicar la operación correspondiente?
+
+Respuesta
