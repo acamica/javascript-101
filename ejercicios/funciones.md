@@ -91,14 +91,16 @@ Pero qué pasa si queremos que este cálculo sea automatizado?
 Acá siempre estamos repitiendo 5\*365, entonces seguramente existe una mejor forma. 
 Por algo sabemos usar funciones, así que vamos a aprovecharlas.
 
-* Retornando kilómetros recorridos
+* Retornando kilómetros recorridos:
 
-        ```javascript
-        var kmRecorridos = function(años){
-            var kmsTotales = 5*365*años; 
-            return kmsTotales;
-        }
-        ```
+    ```javascript
+    
+    var kmRecorridos = function(años){
+        var kmsTotales = 5*365*años; 
+        return kmsTotales;
+    }
+    
+    ```
 
 Apareció la palabra clave `return` es un valor que va a devolver nuestra función. 
 
