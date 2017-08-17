@@ -114,8 +114,35 @@ Repasemos parte por parte el código:
 
 `i++;`: en cada iteración le suma uno al índice para seguir recorriendo el arreglo.
 
+## Bucles anidades
+Dijimos que los arreglos pueden contener cualquier cosa. Entonces pueden también contener a otro arreglo. Suena raro al principio, pero si lo podemos pensar como un grilla o matriz y ahí va a tener sentido. Por ejemplo, si queremos representar el tablero de un juego, un sudoku, claramente un arreglo no nos va a alcanzar, porque tiene 2 dimensiones. 
+
+Necesitamos poder representar filas y columnas. Entonces podemos hacer un arreglo de arreglos.
+
+```javascript
+var grillaNumeros = [ 
+   [ 1, 2, 3],
+   [4, 5, 6],
+   [7, 8, 9]
+]
+```
+
+Para recorrerlo podemos usar bucles anidados que por cada fila *i* recorran todas las posiciones de la columna *j* correspondiente. Es decir, se recorre la grilla de arriba a abajo y de izquierda a derecha.
+
+```javascript
+// Recorremos las filas de la grilla
+for(int i = 0; i < grillaNumeros.length; i++){
+  //recorremos las columnas de la grilla
+  for(int j = 0; j < grillaNumeros[i].length; j++){
+    console.log(grillaNumeros[i][j]);
+  }
+}
+```
+
 
 ## Ejercicios
 
 1. Utilizar un bucle para recorrer los números del 1 al 40 mostrando por consola los únicamente los números pares.
-1. Los arreglos pueden tener arreglos como elementos. ¿Como escribirías un bucle que recorra todos los elementos de un arreglo de arreglos y los muestre por pantalla? **Pista**: tendrás que escribir dos bucles anidados.
+1. Escribir un bucle anidado que recorra un arreglo de arreglos mostrando sólo los números impares.
+
+[Respuestas](/respuestas/bucles.js)
