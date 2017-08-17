@@ -18,6 +18,8 @@ var grillaNumeros = [
 for (var i = 0; i < grillaNumeros.length; i++) {
   for (var j = 0; j < grillaNumeros.length; j++) {
     var actual = grillaNumeros[i][j];
-    console.log(actual);
+    if(!esPar(actual)){
+      console.log(actual);
+    }
   }
 }
