@@ -1,6 +1,6 @@
 # Funciones
 Como su nombre lo indica, las funciones cumplen con una función. ¿Qué sería esto? 
-Puede ser cualquier cosa. Si lo llevamos a nosotros y nuestra vida, podría ser cualquier acción que realizamos. 
+Si lo llevamos a nosotros y nuestra vida, podría ser cualquier acción que realizamos. 
 Hablar, correr, saltar, sumar, restar. Pero estas acciones tienen muchos pasos intermedios. 
 Si yo le digo a alguien que corra no tengo que decirle “move la pierna hacia arriba, ahora dobla la rodilla un poco, 
 llevala hacia adelante”, etc. 
