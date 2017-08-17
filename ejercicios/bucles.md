@@ -34,13 +34,11 @@ y esto en Javascript se escribe así:
 
 * While en Javascript:
 
-  ```javascript
-  
-  while( /* Condicion */ ) {
-    //accion
-  }
-  
-  ```
+   ```javascript
+   while( /* Condicion */ ) {
+     //accion
+   }
+   ```
 
 Veamos un ejemplo con una cuenta regresiva que empieza con un contador en 100 y se va descontando de a 1 hasta llegar a 0 donde se corta el bucle. 
 
@@ -83,7 +81,7 @@ Dados un `contador`, una `condición` y un `incremento del contador`
 
 En nuestro ejemplo sería: 
 
-"Dado el `contador iniciado en 100` (**contador**), si el contador es `mayor a 0`  (**condición**), `restar 1 al contador` (decremento) y `mostrá al contador por la consola` (**acción**)."
+"Dado el `contador iniciado en 100` (**contador**), si el contador es `mayor a 0`  (**condición**), `restar 1 al contador` (**decremento**) y `mostrá al contador por la consola` (**acción**)."
 
 Parece algo críptico a primera vista, pero sólo estamos resumiendo las cosas:
 
@@ -116,3 +114,8 @@ Repasemos parte por parte el código:
 
 `i++;`: en cada iteración le suma uno al índice para seguir recorriendo el arreglo.
 
+
+## Ejercicios
+
+1. Utilizar un bucle para recorrer los números del 1 al 40 mostrando por consola los únicamente los números pares.
+1. Los arreglos pueden tener arreglos como elementos. ¿Como escribirías un bucle que recorra todos los elementos de un arreglo de arreglos y los muestre por pantalla? **Pista**: tendrás que escribir dos bucles anidados.
