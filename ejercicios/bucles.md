@@ -26,71 +26,70 @@ o
 
 Algunos ejemplos podrían ser:
 
-`mientras sigan llegando más invitados, saludarlos`
+`mientras (siga lloviendo), cerrar las puertas`
 
-`mientras haya espacio en la bolsa, agregar pelotas`
+`mientras (haya espacio en la bolsa), agregar pelotas`
 
 y esto en Javascript se escribe así:
 
-```javascript
-while(siganLlegandoInvitados) {
-  saludarInvitado();
-}
-```
+* While en Javascript:
+
+  ```javascript
+  while(/*Condición*/) {
+    //acción
+  }
+  ```
 
 Veamos un ejemplo con una cuenta regresiva que empieza con un contador en 100 y se va descontando de a 1 hasta llegar a 0 donde se corta el bucle. 
 
-```javascript
-var contador = 100;
+* Cuenta regresiva:
 
-while (contador > 0) {
-  contador--; 
-}
-```
+  ```javascript
+  var contador = 100;
 
-Acordate que el ciclo **se va a seguir ejecutando hasta que deje de cumplirse la condición** (en este caso `contador > 0`)
+  while (contador > 0) {
+    contador--; 
+    console.log(contador);
+  }
+  ```
+
+El ciclo **se va a seguir ejecutando hasta que deje de cumplirse la condición** (en este caso `contador > 0`).
+
+¿Qué pasará si nunca deja de cumplirse la condición? Ojo... si lo probás, podés tildar tu navegador!
 
 ## For
 
 Así como el while nos permite repetir alguna tarea varias veces, 
 existe una forma de hacer esto con una sintaxis simplificada.
 
-Podemos poner el contador y la condición y el incremento (o decremento) del contaor en una sola línea:
+Podemos poner el **contador**, la **condición** y el **incremento** (o decremento) del contador en una sola línea:
 
-```javascript
-for(var contador = 0; contador < cantidadInvitados; contador++) {
- saludarInvitado();
-}
-```
+* Sintaxis For
 
+  ```javascript
+  for(var contador = 100; contador > 0; contador--) {
+   console.log(contador);
+  }
+  ```
 
 que se podría traducir como: 
-"Dados un `contador`, una `condición` y un `incremento del contador`, hacé determinada `acción`"
+
+Dados un `contador`, una `condición` y un `incremento del contador`
+   hacé determinada `acción`
 
 En nuestro ejemplo sería: 
 
-"Dado el `contador de invitados` (contador), si el contador es `menor a la cantidad de invitados`  (condición), `sumá 1 al contador` (incremento) y `saludá al invitado` (acción)."
+"Dado el `contador iniciado en 100` (**contador**), si el contador es `mayor a 0`  (**condición**), `restar 1 al contador` (decremento) y `mostrá al contador por la consola` (**acción**)."
 
 Parece algo críptico a primera vista, pero sólo estamos resumiendo las cosas:
 
-```javascript
-var contador = 0
-```
+`var contador = 100`: estamos inicializando el contador que nos va indicar la posición en la que estamos
 
-estamos inicializando el contador que nos va indicar la posición en la que estamos
-
-```javascript
-contador < cantidadInvitados
-```
-
-es la condición para detener el for. Podemos usar cualquier otro tipo de condición. 
+`contador > 0`: es la condición para detener el for. Podemos usar cualquier otro tipo de condición. 
 No necesariamente debe ser por menor (<) o mayor (>). Puede ser igual (=), igual o menor (=<), etc.
 
-```javascript
-contador++
-```
+`contador--`: en cada iteración del for le resta uno al contador
 
-en cada iteración del for le suma uno al contador, para avanzar a la siguiente posición
 Así, tendremos exactamente el mismo resultado que con el `while.`
 
 ## For en arreglos
