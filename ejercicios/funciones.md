@@ -115,4 +115,4 @@ kmRecorridos(6) // retorna 10950
 Para programar una calculadora, necesitamos funciones para **sumar, restar, dividir y multiplicar.** 
 ¿Cómo implementarias estas funciones para que pasados dos parámetros **retornen** el valor luego de aplicar la operación correspondiente?
 
-[Respuestas](/respuestas/04.js)
+[Respuestas](/respuestas/funciones.js)
