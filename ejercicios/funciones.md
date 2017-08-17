@@ -20,44 +20,56 @@ cada vez que escribamos `saludar()`
 
 para declararlas vamos a tener una sintaxis similar al de la creación de variables, 
 de hecho, la función va a estar guardada en una variable.
-```javascript
-var saludar = function() {
-  console.log("¡Hola! Estamos aprendiendo sobre funciones en JavaScript");
-}
-```
+
+* Declaración:
+
+    ```javascript
+    var saludar = function() {
+      console.log("¡Hola! Estamos aprendiendo sobre funciones en JavaScript");
+    }
+    ```
 
 
 Ahora en la variable “saludar” tenemos guardada una función, que podemos ejecutar en cualquier momento. 
 Es como que estamos **etiquetando con un nombre a este bloque de código y lo podemos reutilizar**. 
 
-Ahora sí, al escribir `saludar()` se mostrará en la consola el texto "¡Hola! Estamos aprendiendo sobre funciones en JavaScript".
+* Ejecución:
+
+    `saludar();`
+    
+Ahora sí, se mostrará en la consola el texto "¡Hola! Estamos aprendiendo sobre funciones en JavaScript".
 
 
 ## Parámetros de funciones
 Si pensamos con el ejemplo de `correr`, los parámetros serían como agregar algún tipo de dato extra que va a variar. 
-Por ejemplo, correr 200m, correr 50m, correr 1000m. La funcionalidad es siempre la misma: correr, pero se está modificando
+Por ejemplo, correr 200m, correr 50m, correr 1000m. 
+
+La funcionalidad es siempre la misma: correr, pero se está modificando
 la distancia que pedimos que alguien corra. Esto son los parámetros que recibe un función.
 Sabemos cómo ejecutar un bloque de código y reutilizarlo. 
-Por ejemplo, podemos llamar varias veces a una función “saludar” y
+
+Ahora, queremos poder llamar varias veces a una función “saludar” y
 que muestre el saludo que nosotros queremos cada vez que la llamamos.
 Por ejemplo, una vez con “hola amigos”, otra con “Cómo andan?”, etc. Para eso podemos utilizar los parámetros. 
 
-```javascript
-saludar("hola amigos");
-saludar("¿Cómo andan?");
-```
+* Ejecución con parámetros
+
+    ```javascript
+    saludar("hola amigos");
+    saludar("¿Cómo andan?");
+    ```
 
 
 Si ejecutamos esto no va a pasar nada, sigue siendo siempre el mismo mensaje de saludo. 
-Eso es porque cuando creamos nuestra función tenemos que decirle que puede recibir parámetros.
+Eso es porque cuando creamos nuestra función tenemos que decirle que puede recibir parámetros. ¿Te acordás cuando la declaramos?
 
-Por eso cambiamos la declaración de la función a: 
+* Cambiando la declaración para aceptar parámetros 
 
-```javascript
-var saludar = function(saludo) {
-  console.log(saludo);
-}
-```
+    ```javascript
+    var saludar = function(saludo) {
+      console.log(saludo);
+    }
+    ```
 
 Una función con parámetros podemos pensarla como una caja que le damos algo y nos devuelve otra cosa.
 Como esas máquinas de helado, le pasamos crema, leche y hielo y nos devuelve un helado. 
